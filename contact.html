@@ -1,71 +1,83 @@
 <!doctype html>
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Contact — William Johnson</title>
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Liam Johnson</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<header class="site-header">
-<div class="container header-inner">
-<a class="logo" href="index.html">William Johnson</a>
-<nav class="nav" id="primaryNav">
-<ul>
-<li><a href="about.html">About</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="contact.html" aria-current="page">Contact</a></li>
-</ul>
-</nav>
-<button id="navToggle4" class="nav-toggle" aria-label="Toggle navigation">☰</button>
-</div>
-</header>
+<body class="theme-dark">
+  <header class="site-header container header-inner">
+    <a class="brand" href="index.html">
+      <svg class="logo" width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" fill="currentColor"/></svg>
+      <span class="brand-name">Liam Johnson</span>
+    </a>
 
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main class="container narrow">
-<h1>Contact</h1>
-<p class="lede">Have a project in mind? Reach out — replace the placeholder email or wire this form to your backend.</p>
+  <main class="container content">
+    <header class="section-head">
+      <h1>Contact</h1>
+      <p class="muted">Prefer email? Use the form below or send a message directly to <a href="mailto:you@example.com">you@example.com</a>.</p>
+    </header>
 
+    <section class="contact-grid">
+      <form id="contactForm" class="form-card" novalidate>
+        <input type="hidden" name="honeypot" id="hp" value="">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required minlength="2" />
+          <div class="form-error" id="err-name" aria-live="polite"></div>
+        </div>
 
-<form id="contactForm" class="contact-form" novalidate>
-<label for="name">Your name</label>
-<input id="name" name="name" type="text" required minlength="2" />
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@company.com" required />
+          <div class="form-error" id="err-email" aria-live="polite"></div>
+        </div>
 
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="Project, question, etc." required minlength="3"/>
+          <div class="form-error" id="err-subject" aria-live="polite"></div>
+        </div>
 
-<label for="email">Email</label>
-<input id="email" name="email" type="email" required />
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me about the project..." required minlength="15" rows="6"></textarea>
+          <div class="form-error" id="err-message" aria-live="polite"></div>
+        </div>
 
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <button type="reset" class="btn btn-ghost">Reset</button>
+        </div>
 
-<label for="message">Message</label>
-<textarea id="message" name="message" required minlength="10"></textarea>
+        <div id="formStatus" class="form-status" aria-live="polite"></div>
+      </form>
 
+      <aside class="contact-info card">
+        <h3>Other ways to reach me</h3>
+        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/your-github" target="_blank" rel="noopener">github.com/your-github</a></p>
+        <p>Availability: Freelance & contract</p>
+        <div class="note">This form uses client-side validation. On GitHub Pages it triggers a mailto: fallback so messages can be opened in the user's mail client.</div>
+      </aside>
+    </section>
+  </main>
 
-<div class="form-row">
-<button type="submit" class="btn">Send Message</button>
-<button type="button" id="resetBtn" class="btn ghost">Reset</button>
-</div>
+  <footer class="site-footer container footer-inner">
+    <p>© <span id="yearContact"></span> Liam Johnson</p>
+  </footer>
 
-
-<div id="formFeedback" aria-live="polite" class="form-feedback"></div>
-</form>
-
-
-<section class="alt-contact">
-<h2>Other ways to reach me</h2>
-<ul>
-<li>Email: <a href="mailto:you@example.com">you@example.com</a> (replace this)</li>
-<li>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></li>
-</ul>
-</section>
-</main>
-
-
-<footer class="site-footer">
-<div class="container footer-inner">
-<div>© <span id="curYear4"></span> William Johnson</div>
-</div>
-</footer>
-
-
-<script src="scripts.js"></script>
+  <script src="scripts.js" defer></script>
 </body>
 </html>

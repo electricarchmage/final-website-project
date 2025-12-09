@@ -1,9 +1,4 @@
-:root{
---bg: #000;
---panel: #fff;
---muted: #d1d5db;
---accent: #2a52be; /* royal blue */
---radius: 12px;
+/* Basic reset */
 }
 *{box-sizing:border-box}
 html,body{height:100%}

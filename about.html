@@ -1,71 +1,80 @@
 ## File: `about.html`
+</ul>
+</details>
+</div>
+</article>
 
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>About — William Johnson</title>
-<link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-<header class="site-header">
-<div class="container header-inner">
-<a class="logo" href="index.html">William Johnson</a>
-<nav class="nav" id="primaryNav">
+
+<!-- Project 2 -->
+<article class="project-card">
+<img src="/assets/project-llm.jpg" alt="LLM project" />
+<div class="project-meta">
+<h3>TinyLlama Fine-tune & Inference</h3>
+<p>Fine-tuned TinyLlama on a multi-million row dataset using Unsloth on Kaggle. Addressed overfitting and optimized weights for inference throughput.</p>
+<details>
+<summary>Technical notes</summary>
 <ul>
-<li><a href="about.html" aria-current="page">About</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="contact.html">Contact</a></li>
+<li>Unsloth, Hugging Face datasets</li>
+<li>Tokenization, checkpointing, and inference pipelines</li>
+<li>Inference integration into small desktop UIs</li>
 </ul>
-</nav>
-<button id="navToggle2" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+</details>
 </div>
-</header>
+</article>
 
 
-<main class="container narrow">
-<h1>About</h1>
-<p class="lede">I’m William Johnson — a developer and ML tinkerer who loves turning messy data into elegant tools and neat experiences. I work across the stack: data science, model prototyping, and user-facing interfaces.</p>
-
-
-<section class="bio-grid">
-<div>
-<h2>Background</h2>
-<p>My work ranges from building kNN and decision-tree experiments for fraud detection to fine-tuning compact LLMs and crafting desktop UIs in Tkinter. I enjoy bridging the gap between experimental research and product-quality polish.</p>
-</div>
-<div>
-<h2>Skills</h2>
-<ul class="skill-list">
-<li>Python & data science (pandas, scikit-learn, PyTorch)</li>
-<li>LLM fine-tuning (TinyLlama, Unsloth, Hugging Face)</li>
-<li>Frontend: HTML, CSS, vanilla JS — rapid prototypes & accessible UI</li>
-<li>Desktop UIs: Tkinter, customtkinter</li>
-<li>APIs: Discord bots, Tenor/GIF integration</li>
+<!-- Project 3 -->
+<article class="project-card">
+<img src="/assets/project-ui.jpg" alt="UI project" />
+<div class="project-meta">
+<h3>Virtual Cookbook — Tkinter app</h3>
+<p>Two-page layout cookbook app using customtkinter. Features JSON persistence for recipes, page navigation, and per-page prompts for LLM-generated content.</p>
+<details>
+<summary>Technical notes</summary>
+<ul>
+<li>Python, Tkinter, customtkinter</li>
+<li>JSON storage; keyboard shortcuts (Enter to submit)</li>
+<li>Export/import recipes to/from OneDrive</li>
 </ul>
+</details>
 </div>
-</section>
+</article>
 
 
-<section>
-<h2>Process</h2>
-<p>I favor iterative development: quick prototypes, early tests, and then thoughtful refactors. For research projects I emphasize reproducibility and clear evaluation. For UI work I prioritize performance, accessibility, and visual clarity.</p>
+<!-- Project 4 -->
+<article class="project-card">
+<img src="/assets/project-bot.jpg" alt="Bot project" />
+<div class="project-meta">
+<h3>Discord Bot + Tenor Integration</h3>
+<p>Built a Discord bot that requests GIFs from Tenor and posts them into channels. Includes API-key handling and robust error logging.</p>
+<details>
+<summary>Technical notes</summary>
+<ul>
+<li>Node.js / Python (choose your runtime)</li>
+<li>Discord bot auth and Tenor API integration</li>
+<li>Rate-limiting handling and graceful failures</li>
+</ul>
+</details>
+</div>
+</article>
+
+
 </section>
 </main>
 
 
 <footer class="site-footer">
 <div class="container footer-inner">
-<div>© <span id="curYear2"></span> William Johnson</div>
+<div>© <span id="curYear3"></span> William Johnson</div>
 <nav>
-<a href="index.html">Home</a>
-<a href="projects.html">Projects</a>
-<a href="contact.html">Contact</a>
+<a href="/index.html">Home</a>
+<a href="/about.html">About</a>
+<a href="/contact.html">Contact</a>
 </nav>
 </div>
 </footer>
 
 
-<script src="scripts.js"></script>
+<script src="/scripts.js"></script>
 </body>
 </html>

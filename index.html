@@ -1,63 +1,155 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>William Johnson – Portfolio</title>
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Liam Johnson — Software Engineer</title>
+  <meta name="description" content="Liam Johnson — software engineer. Portfolio showcasing projects: Cookbook, Apocrypha Generator, Discord bot, and more." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<!-- NAVBAR -->
-<header class="navbar">
-<div class="logo"><a href="index.html">William Johnson</a></div>
-<nav class="nav-links" id="nav-links">
-<a href="about.html">About</a>
-<a href="projects.html">Projects</a>
-<a href="contact.html">Contact</a>
-</nav>
-<div class="nav-toggle" id="nav-toggle">&#9776;</div>
-</header>
+<body class="theme-dark">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <svg class="logo" width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" fill="currentColor"/></svg>
+        <span class="brand-name">Liam Johnson</span>
+      </a>
 
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="cta">Contact</a></li>
+        </ul>
+      </nav>
 
-<!-- HERO SECTION -->
-<section class="hero">
-<div class="hero-content">
-<h1>Hi, I'm William Johnson</h1>
-<p>Developer • Researcher • Creator</p>
-<a href="projects.html" class="btn-primary">View My Projects</a>
-</div>
-</section>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="sr-only">Toggle menu</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-linecap="round" stroke-width="2"/></svg>
+      </button>
+    </div>
 
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-<!-- FEATURED PROJECTS PREVIEW -->
-<section class="featured-projects">
-<h2>Featured Work</h2>
-<div class="project-grid">
-<div class="project-card">
-<h3>AI Fraud Detection Model</h3>
-<p>A kNN and decision-tree based system designed to identify fraudulent transactions using feature engineering and weighted distances.</p>
-<a href="projects.html" class="btn-secondary">Learn More</a>
-</div>
-<div class="project-card">
-<h3>Random Forest Spam Classifier</h3>
-<p>Email classification model trained on the Spambase dataset with a focus on the last three predictive features.</p>
-<a href="projects.html" class="btn-secondary">Learn More</a>
-</div>
-<div class="project-card">
-<h3>TinyLlama Fine‑Tuned Cookbook Generator</h3>
-<p>A custom fine‑tuned TinyLlama model powering a virtual cookbook with a dynamic two‑page UI.</p>
-<a href="projects.html" class="btn-secondary">Learn More</a>
-</div>
-</div>
-</section>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Software Engineer</p>
+          <h1 class="hero-title">Building practical, maintainable web and automation systems</h1>
+          <p class="hero-blurb">I build tools that make teams faster: automation, backend services, and polished frontend experiences. Recent work includes a TinyLlama-fine-tuned cookbook generator, Discord automations, and tooling for data pipelines.</p>
+          <p class="hero-ctas">
+            <a href="projects.html" class="btn btn-primary">View projects</a>
+            <a href="contact.html" class="btn btn-outline">Get in touch</a>
+          </p>
+          <ul class="skills">
+            <li>Python</li>
+            <li>Node.js</li>
+            <li>React</li>
+            <li>Automation</li>
+            <li>DevOps</li>
+          </ul>
+        </div>
 
+        <div class="feature-card">
+          <div class="card-inner">
+            <h3 class="card-title">Featured project</h3>
+            <h4 class="card-project">Virtual Cookbook</h4>
+            <p class="card-desc">A two-page virtual cookbook generator powered by a fine-tuned TinyLlama model. Saves recipes to JSON and provides a printable layout.</p>
+            <div class="card-meta">
+              <span class="chip">Python</span>
+              <span class="chip">TinyLlama</span>
+              <a class="link-card" href="projects.html#cookbook">Learn more →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- FOOTER -->
-<footer>
-<p>© 2025 William Johnson. All rights reserved.</p>
-</footer>
+    <section class="highlight container">
+      <div class="highlight-inner">
+        <div class="highlight-item">
+          <h4>Reliable engineering</h4>
+          <p>Testing, CI/CD, and pragmatic design for long-lived systems.</p>
+        </div>
+        <div class="highlight-item">
+          <h4>Fast iteration</h4>
+          <p>Ship small, measured updates with clear rollback paths.</p>
+        </div>
+        <div class="highlight-item">
+          <h4>Clear communication</h4>
+          <p>Readable code, thorough PRs, and client-friendly documentation.</p>
+        </div>
+      </div>
+    </section>
 
+    <section class="projects-preview container" aria-labelledby="projectsHeading">
+      <div class="section-header">
+        <h2 id="projectsHeading">Recent projects</h2>
+        <a href="projects.html" class="view-all">View all</a>
+      </div>
 
-<script src="scripts.js"></script>
+      <div class="grid">
+        <article class="project-card">
+          <h3>Virtual Cookbook</h3>
+          <p>Generator + UI that outputs printable two-page recipes saved as JSON.</p>
+          <div class="project-foot">
+            <span class="small">Python • TinyLlama</span>
+            <a href="projects.html#cookbook" class="micro-link">Details</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Apocrypha Generator</h3>
+          <p>A procedurally creative text generator for worldbuilding with seed controls and export options.</p>
+          <div class="project-foot">
+            <span class="small">Node • React</span>
+            <a href="projects.html#apocrypha" class="micro-link">Details</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Discord Automation Bot</h3>
+          <p>Bot that integrates Tenor API for media, has role-management, and automation scripts for communities.</p>
+          <div class="project-foot">
+            <span class="small">TypeScript • Discord.js</span>
+            <a href="projects.html#discord" class="micro-link">Details</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-cta container">
+      <div class="cta-inner">
+        <h3>Interested in working together?</h3>
+        <p>I'm available for freelance projects and collaborations. Tell me about your idea.</p>
+        <a href="contact.html" class="btn btn-primary">Contact me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Liam Johnson — Built with care.</p>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="https://github.com/your-github" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="scripts.js" defer></script>
 </body>
 </html>

@@ -1,80 +1,56 @@
-## File: `about.html`
-</ul>
-</details>
-</div>
-</article>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Liam Johnson</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-dark">
+  <header class="site-header container header-inner">
+    <a class="brand" href="index.html">
+      <svg class="logo" width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" fill="currentColor"/></svg>
+      <span class="brand-name">Liam Johnson</span>
+    </a>
 
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- Project 2 -->
-<article class="project-card">
-<img src="/assets/project-llm.jpg" alt="LLM project" />
-<div class="project-meta">
-<h3>TinyLlama Fine-tune & Inference</h3>
-<p>Fine-tuned TinyLlama on a multi-million row dataset using Unsloth on Kaggle. Addressed overfitting and optimized weights for inference throughput.</p>
-<details>
-<summary>Technical notes</summary>
-<ul>
-<li>Unsloth, Hugging Face datasets</li>
-<li>Tokenization, checkpointing, and inference pipelines</li>
-<li>Inference integration into small desktop UIs</li>
-</ul>
-</details>
-</div>
-</article>
+  <main class="container content">
+    <article class="about">
+      <h1>About me</h1>
+      <p>I'm a software engineer who focuses on reliable systems, clean automation, and practical ML tooling. I enjoy building tools that reduce repetitive work and ship value quickly.</p>
 
+      <h2>Approach</h2>
+      <p>I do pragmatic engineering: thoughtful API design, sensible abstractions, and testable components. I value clarity, instrumentation, and code that other engineers can confidently change.</p>
 
-<!-- Project 3 -->
-<article class="project-card">
-<img src="/assets/project-ui.jpg" alt="UI project" />
-<div class="project-meta">
-<h3>Virtual Cookbook — Tkinter app</h3>
-<p>Two-page layout cookbook app using customtkinter. Features JSON persistence for recipes, page navigation, and per-page prompts for LLM-generated content.</p>
-<details>
-<summary>Technical notes</summary>
-<ul>
-<li>Python, Tkinter, customtkinter</li>
-<li>JSON storage; keyboard shortcuts (Enter to submit)</li>
-<li>Export/import recipes to/from OneDrive</li>
-</ul>
-</details>
-</div>
-</article>
+      <h2>Tools & stack</h2>
+      <ul class="stack-list">
+        <li>Python (scripting, ML pipelines)</li>
+        <li>Node / TypeScript (services & bots)</li>
+        <li>React (frontend)</li>
+        <li>Docker & CI/CD</li>
+        <li>Postgres / SQLite</li>
+      </ul>
 
+      <h2>Fun projects</h2>
+      <p>Things I've built recently: a TinyLlama-fine-tuned virtual cookbook generator, an Apocrypha procedural text generator, and a production-ready Discord bot that integrates media APIs.</p>
 
-<!-- Project 4 -->
-<article class="project-card">
-<img src="/assets/project-bot.jpg" alt="Bot project" />
-<div class="project-meta">
-<h3>Discord Bot + Tenor Integration</h3>
-<p>Built a Discord bot that requests GIFs from Tenor and posts them into channels. Includes API-key handling and robust error logging.</p>
-<details>
-<summary>Technical notes</summary>
-<ul>
-<li>Node.js / Python (choose your runtime)</li>
-<li>Discord bot auth and Tenor API integration</li>
-<li>Rate-limiting handling and graceful failures</li>
-</ul>
-</details>
-</div>
-</article>
+      <p>If you'd like to see more specific code samples or talk about a project, <a href="contact.html">get in touch</a>.</p>
+    </article>
+  </main>
 
+  <footer class="site-footer container footer-inner">
+    <p>© <span id="yearAbout"></span> Liam Johnson</p>
+  </footer>
 
-</section>
-</main>
-
-
-<footer class="site-footer">
-<div class="container footer-inner">
-<div>© <span id="curYear3"></span> William Johnson</div>
-<nav>
-<a href="/index.html">Home</a>
-<a href="/about.html">About</a>
-<a href="/contact.html">Contact</a>
-</nav>
-</div>
-</footer>
-
-
-<script src="/scripts.js"></script>
+  <script src="scripts.js" defer></script>
 </body>
 </html>

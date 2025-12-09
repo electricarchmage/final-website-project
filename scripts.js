@@ -1,3 +1,4 @@
+// Small UI helpers: nav toggle, current year, and contact form validation
 (function(){
 // Nav toggles (works for each page that uses same id pattern)
 function setupToggle(id){

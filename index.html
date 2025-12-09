@@ -1,68 +1,60 @@
-<!doctype html>
-
-
-<main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>William Johnson – Portfolio</title>
 <link rel="stylesheet" href="styles.css" />
-<section class="hero">
-<div class="container hero-grid">
-<div class="hero-text">
-<h1>Designing practical ML systems & polished user experiences.</h1>
-<p class="lead">I build data-driven tools, experimental machine learning models, and sleek user interfaces with a focus on clarity, performance, and craft.</p>
-<p class="cta-row">
-<a class="btn" href="projects.html">View Projects</a>
-<a class="btn ghost" href="about.html">About Me</a>
-</p>
-</div>
-<div class="hero-visual">
-<div class="visual-card">
-<img src="assets/hero-placeholder.jpg" alt="Project montage placeholder" />
-<figcaption>Images & case studies coming — replace with your images.</figcaption>
-</div>
-</div>
-</div>
-</section>
-
-
-<section class="highlights">
-<div class="container">
-<h2 class="section-title">Selected Highlights</h2>
-<div class="grid-3">
-<article class="card">
-<h3>ML: Fraud Detection (kNN)</h3>
-<p>Experimented with a kNN approach to transactional fraud detection, including feature normalization and distance weighting. Implemented in Python.</p>
-</article>
-<article class="card">
-<h3>LLM: TinyLlama Fine-tune</h3>
-<p>Fine-tuned a TinyLlama model using Unsloth and HF datasets on Kaggle (multi-million row dataset), focusing on inference stability and preventing catastrophic forgetting.</p>
-</article>
-<article class="card">
-<h3>UI: Virtual Cookbook</h3>
-<p>Built a two-page cookbook UI in Tkinter with JSON persistence, table-of-contents navigation, and per-page prompts for generative recipes.</p>
-</article>
-</div>
-</div>
-</section>
-
-
-<section class="contact-cta">
-<div class="container">
-<h2>Want to collaborate?</h2>
-<p>Send a message or view the contact page — I respond to serious inquiries and freelance offers.</p>
-<a class="btn" href="contact.html">Contact Me</a>
-</div>
-</section>
-</main>
-
-
-<footer class="site-footer">
-<div class="container footer-inner">
-<div>© <span id="curYear"></span> William Johnson</div>
-<nav>
+</head>
+<body>
+<!-- NAVBAR -->
+<header class="navbar">
+<div class="logo"><a href="index.html">William Johnson</a></div>
+<nav class="nav-links" id="nav-links">
 <a href="about.html">About</a>
 <a href="projects.html">Projects</a>
 <a href="contact.html">Contact</a>
 </nav>
+<div class="nav-toggle" id="nav-toggle">&#9776;</div>
+</header>
+
+
+<!-- HERO SECTION -->
+<section class="hero">
+<div class="hero-content">
+<h1>Hi, I'm William Johnson</h1>
+<p>Developer • Researcher • Creator</p>
+<a href="projects.html" class="btn-primary">View My Projects</a>
 </div>
+</section>
+
+
+<!-- FEATURED PROJECTS PREVIEW -->
+<section class="featured-projects">
+<h2>Featured Work</h2>
+<div class="project-grid">
+<div class="project-card">
+<h3>AI Fraud Detection Model</h3>
+<p>A kNN and decision-tree based system designed to identify fraudulent transactions using feature engineering and weighted distances.</p>
+<a href="projects.html" class="btn-secondary">Learn More</a>
+</div>
+<div class="project-card">
+<h3>Random Forest Spam Classifier</h3>
+<p>Email classification model trained on the Spambase dataset with a focus on the last three predictive features.</p>
+<a href="projects.html" class="btn-secondary">Learn More</a>
+</div>
+<div class="project-card">
+<h3>TinyLlama Fine‑Tuned Cookbook Generator</h3>
+<p>A custom fine‑tuned TinyLlama model powering a virtual cookbook with a dynamic two‑page UI.</p>
+<a href="projects.html" class="btn-secondary">Learn More</a>
+</div>
+</div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+<p>© 2025 William Johnson. All rights reserved.</p>
 </footer>
 
 
